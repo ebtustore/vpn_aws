@@ -1,0 +1,10 @@
+---
+- name: Executar script de vpn
+  hosts: localhost
+  connection: local
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+    
+  tasks:
+    - name: Executar script de vpn
+      script: /dump/dp.sh
